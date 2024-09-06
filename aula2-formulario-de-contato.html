@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de contato</title>
+</head>
+
+<body>
+    <h1>Formulário de contato</h1>
+    <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email">
+        <br />
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone">
+        <br />
+        <br />
+        Sexo:
+        <br />
+        <input type="radio" name="sexo" value="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" value="feminino" id="feminino">
+        <label for="feminino">Feminino</label>
+        <p>Área de interesse:
+            <select name="area" id="area">
+                <option value="desenvolvimento">Desenvolvimento</option>
+                <option value="automação">Automação</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </p>
+        Preferências de contato:
+        <br />
+        <label for="email-check">Email</label>
+        <input type="checkbox" name="preferencias" value="email" id="email-check">
+        <label for="telefone">Telefone</label>
+        <input type="checkbox" name="preferencias" value="telefone" id="telefone">
+        <label for="sms">SMS</label>
+        <input type="checkbox" name="preferencias" value="sms" id="sms">
+        <p>Mensagem:
+            <textarea name="mensagem" col="30" rows="5" placeholder="Digite sua mensagem aqui"></textarea>
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
