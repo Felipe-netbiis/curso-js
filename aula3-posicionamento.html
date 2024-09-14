@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        .elemento-pai {
+            background-color: aqua;
+            width: 100%;
+            height: 160vh;
+            margin-top: 300px;
+        }
+
+        #elemento-filho {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            /* posicionamento em relação à página, independente dos elementos */
+            /* position: absolute; */
+            /* posicionamento que acompanha o scroll */
+            /* position: fixed; */
+            /* acompanha o scroll mas obedece o elemento pai */
+            /* position: sticky; */
+            /* obedece o elemento pai */
+            /* position: relative; */
+            position: static;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="elemento-pai">
+        <div id="elemento-filho"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi quisquam, magnam excepturi veritatis
+            incidunt mollitia cum. A, non reiciendis culpa nemo corporis sed quis molestias necessitatibus magni omnis
+            modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi quisquam, magnam excepturi veritatis
+            incidunt mollitia cum. A, non reiciendis culpa nemo corporis sed quis molestias necessitatibus magni omnis
+            modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi quisquam, magnam excepturi veritatis
+            incidunt mollitia cum. A, non reiciendis culpa nemo corporis sed quis molestias necessitatibus magni omnis
+            modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate modi quisquam, magnam excepturi veritatis
+            incidunt mollitia cum. A, non reiciendis culpa nemo corporis sed quis molestias necessitatibus magni omnis
+            modi.</p>
+    </div>
+
+</body>
+
+</html>

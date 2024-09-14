@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displays</title>
+    <style>
+        .tema{
+            background-color: aqua;
+            /* estilo pega somente o necessário, pode remover quebra de linha não feita via <br> */
+            /* display: inline; */
+            /* inline-block respeita os códigos de padding/margem etc */
+            /* display: inline-block; */
+            /* none = elemento não aparece */
+            /* display:none; */
+            /* tamanho total do elemento */
+            display:block;
+            height: 300px;
+            width: 300px;
+        }
+        .paragrafo{
+            background-color: brown;
+            display: inline-block;
+        }
+        .sequencia{
+            background-color: lightcyan;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="tema">Tema principal</h1>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+    <div class="sequencia"></div>
+    <div class="sequencia"></div>
+    <div class="sequencia"></div>
+    <div class="sequencia"></div>
+    <div class="sequencia"></div>
+    <div class="sequencia"></div>
+</body>
+
+</html>

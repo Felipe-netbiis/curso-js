@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        #container{
+            display: grid;
+            /* 3 colunas de 100px cada */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(3, 100px); */
+            /* divide em partes iguais com 1, mais para trocar o tamanho relativo */
+            grid-template-columns: 1fr 1fr 1fr;  
+            /*fr as in fraction */
+            gap: 2px;
+            grid-template-rows: repeat(3, 40px);
+        }
+        .item{
+            background-color: lightgoldenrodyellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+
+
+    </div>
+</body>
+
+</html>
