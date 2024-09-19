@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+</head>
+<body>
+
+<div id="form-container" class="form-container">
+    <form id="myForm">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" ><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" ><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<div id="message-container" class="message-container" style="display: none;">
+    <p>Enviado com sucesso!</p>
+    <button id="resetFormButton">Preencher novamente</button>
+</div>
+
+<script>
+    const formContainer = document.getElementById('form-container');
+    const messageContainer = document.getElementById('message-container');
+    const form = document.getElementById('myForm');
+    const resetButton = document.getElementById('resetFormButton');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o comportamento padrão de recarregar a página
+        formContainer.style.display = 'none';
+        messageContainer.style.display = 'block';
+    });
+
+    resetButton.addEventListener('click', function() {
+        messageContainer.style.display = 'none';
+        formContainer.style.display = 'block';
+        form.reset(); // Limpa os campos do formulário
+    });
+</script>
+
+</body>
+</html>

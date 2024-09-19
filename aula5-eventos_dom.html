@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+</head>
+
+<body>
+    <!-- <button id="botao" onclick="clicou()">Clique</button> -->
+    <button id="add" onclick="adicionar()">+</button>
+    <h1 id="valor"></h1>
+    <button id="remove" onclick="remover()">-</button>
+    <script>
+        // function clicou() {
+        //     alert("Botão clicado");
+        // }
+        let valorEl = document.getElementById('valor');
+        let valor = 0;
+        function adicionar() {
+            valor++;
+            valorEl.innerText = valor;
+        }
+        function remover() {
+            valor--;
+            valorEl.innerText = valor;
+        }
+    </script>
+</body>
+
+</html>

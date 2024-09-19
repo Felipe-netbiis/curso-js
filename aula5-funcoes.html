@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcoes</title>
+
+</head>
+
+<body>
+    <h1 id="mensagem">Bem vindo!</h1>
+    <script>
+        function boasvindas() {
+            let nome = prompt("Qual seu nome?");
+            let mensagem = document.getElementById("mensagem");
+            mensagem.innerHTML += nome;
+        }
+        boasvindas();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo" style="color: blue">Nosso titulo</h1>
+    <p class="paragrafo">Nosso parágrafo</p>
+    <p class="paragrafo">Nosso parágrafo</p>
+    <input type="text" name="nome" placeholder="Digite seu nome">
+
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox">Checked</label>
+    <script>
+        // selecionando elemento por ID - unico normalmente
+        let titulo = document.getElementById('titulo');
+        console.log(titulo.innerText);
+        // selecionando elementos por classe - lista pois podem ser vários
+        let paragrafos = document.getElementsByClassName('paragrafo');
+        // selecionando elementos por tag html
+        let paragrafosTag = document.getElementsByTagName('p');
+        // selecionando elementos por atributo name 
+        let inputs = document.getElementsByName('nome');
+        // query selector traz um (único ou primeiro)
+        let querySelectorTitulo = document.querySelector('#titulo');
+        // query selector all trará uma lista
+        let querySelectorParagrafo = document.querySelectorAll('.paragrafo');
+        let querySelectorParagrafo2 = document.querySelectorAll('p');
+        let checkbox = document.getElementById('checkbox');
+        // acessando atributos e conteúdos dos elementos
+        console.log(titulo.innerHTML);
+        console.log(paragrafos[0].innerText);
+
+        // acessando os estilos do elemento
+        console.log(titulo.style.color);
+
+        // acessando outras propriedades
+        console.log(inputs[0].placeholder);
+        console.log(checkbox.checked)
+
+        //trocar valor de elemento HTML
+        titulo.innerText += " + Novo titulo";
+        paragrafos[0].style.color = 'red';
+        inputs[0].value = 'valor padrão';
+        checkbox.checked=true;
+    </script>
+</body>
+
+</html>
