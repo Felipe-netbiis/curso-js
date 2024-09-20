@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt("Digite o primeiro número");
+        let operador = prompt("Digite a operação, sendo aceitos apenas + - * ou /");
+        let num2 = prompt("Digite o segundo número");
+
+        switch (operador) {
+            case "+": document.write(parseFloat(num1) + parseFloat(num2))
+                break;
+            case "-": document.write(parseFloat(num1) - parseFloat(num2))
+                break;
+            case "*": document.write(parseFloat(num1) * parseFloat(num2))
+                break;
+            case "/": document.write(parseFloat(num1) / parseFloat(num2))
+                break;
+            default: document.write("Operação inválida")
+        }
+    </script>
+</body>
+
+</html>

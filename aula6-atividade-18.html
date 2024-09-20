@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 18+</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">Site de apostas</h1>
+        <div id="form">
+            <input type="number" id="idade" placeholder="Digite sua idade">
+            <br />
+            <input type="checkbox" name="termos" id="termos">
+            <label for="termos">Declaro que li e aceito os termos</label>
+            <br />
+            <button id="enviar" onclick="clique()">Enviar</button>
+        </div>
+
+        <div id="bem-vindo" style="display: none">
+            <h1>Seja bem vindo</h1>
+        </div>
+
+        <div id="naopermitido" style="display: none">
+            <h1>Sem permissão de acesso</h1>
+        </div>
+    </div>
+    <script>
+        const idadeUser = document.getElementById('idade')
+        const termosUser = document.getElementById('termos')
+        const btnEnviar = document.getElementById('enviar')
+        const bv = document.getElementById('bem-vindo')
+        const np = document.getElementById('naopermitido')
+        const form = document.getElementById('form')
+
+        function clique() {
+            if (idadeUser.value >= 18 && termosUser.checked) {
+                bv.style.display = "block";
+            } else {
+                np.style.display = "block";
+            }
+            form.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
