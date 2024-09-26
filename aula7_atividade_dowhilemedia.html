@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let i = 0;
+        let num = 0;
+        let soma = 0;
+        do {
+            num = parseInt(prompt('Digite o numero inteiro para soma. Digite 0 para finalizar'));
+            if (num !== 0) {
+                soma += num;
+                i++
+            }
+        } while (num !== 0)
+
+        document.write(soma / i)
+    </script>
+</body>
+
+</html>

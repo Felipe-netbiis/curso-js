@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function verificarNota(num1) {
+            let nota = parseFloat(num1)
+            if (nota < 0 || nota > 10 || isNaN(nota)) {
+                return false
+            } else {
+                return nota
+            }
+        }
+
+        do {
+            var nota = prompt('Digite a nota');
+        } while (!verificarNota(nota))
+
+        document.write(nota)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Multiplicação</title>
+    <script>
+        function gerarTabela() {
+            // Obter o valor digitado pelo usuário
+            var numero = document.getElementById("numero").value;
+            var resultado = "";
+
+            // Verificar se o valor é um número
+            if (isNaN(numero) || numero == "") {
+                resultado = "Por favor, insira um número válido.";
+            } else {
+                // Gerar a tabela de multiplicação de 1 a 10
+                resultado = "<table border='1'>";
+                for (var i = 1; i <= 10; i++) {
+                    resultado += "<tr><td>" + numero + " x " + i + " = " + (numero * i) + "</td></tr>";
+                }
+                resultado += "</table>";
+            }
+
+            // Exibir o resultado na página
+            document.getElementById("tabela").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Gerador de Tabela de Multiplicação</h1>
+    <p>Digite um número e clique em "Gerar Tabela" para ver a tabela de multiplicação de 1 a 10.</p>
+
+    <!-- Campo de entrada para o número -->
+    <input type="text" id="numero" placeholder="Digite um número">
+
+    <!-- Botão para gerar a tabela -->
+    <button onclick="gerarTabela()">Gerar Tabela</button>
+
+    <!-- Div onde a tabela será exibida -->
+    <div id="tabela"></div>
+</body>
+</html>
